@@ -20,4 +20,13 @@ class ApplicationController
   get '/views/recipe.erb' do
     erb :recipe
   end
+  
+  get '/views/restaurants.erb' do
+    erb :restaurants
+  end
+  
+  get '/views/reviews.erb' do
+    erb :reviews
+  end
+  
 end
