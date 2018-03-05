@@ -15,3 +15,9 @@ class ApplicationController < Sinatra::Base
   end
   
 end
+
+class ApplicationController
+  get '/views/recipe.erb' do
+    erb :recipe
+  end
+end
