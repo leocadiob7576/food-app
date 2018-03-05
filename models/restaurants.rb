@@ -1,4 +1,3 @@
-require 'romato'
 
 class Resturant
     

@@ -1,5 +1,7 @@
 require 'dotenv/load'
 require 'bundler'
+require 'romato'
+
 Bundler.require
 
 require_relative 'models/model.rb'
