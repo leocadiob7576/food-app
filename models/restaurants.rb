@@ -1,4 +1,3 @@
-
 class Resturant
     
     def initialize
