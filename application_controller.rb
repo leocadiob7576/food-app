@@ -14,6 +14,10 @@ class ApplicationController < Sinatra::Base
     erb :index
   end
   
+  post '/result' do
+    erb :resultRecipe
+  end  
+  
 end
 
 class ApplicationController
