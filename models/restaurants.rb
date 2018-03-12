@@ -3,9 +3,10 @@ class Resturant
     def initialize
         zomato_instance = Zomato.new("Zomato")
     end
-    
-    def get_categories
-        zomato_intance.get_caregories(
+end
+
+def resturant_finder
+    zomato_intance.get_caregories(
             {
 	            "categories"=>
                             	[
@@ -26,11 +27,5 @@ class Resturant
                             	]
             }
             
-            )
-    end
-    
-end
-
-def resturant_finder
-    
+    )
 end
