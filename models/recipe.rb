@@ -1,2 +1,5 @@
-# https://github.com/CreoMark/food2fork-ruby
+require 'food2fork'
 
+def recipe_finder
+    Recipe.search(@user_food)
+end

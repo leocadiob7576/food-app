@@ -4,7 +4,7 @@ GEM
     coderay (1.1.1)
     diff-lcs (1.3)
     dotenv (2.2.1)
-    edamam-ruby (0.2.0)
+    food2fork (0.1.0)
     httparty (0.16.0)
       multi_xml (>= 0.5.2)
     method_source (0.8.2)
@@ -49,7 +49,7 @@ PLATFORMS
 
 DEPENDENCIES
   dotenv
-  edamam-ruby
+  food2fork
   pry
   romato
   shotgun
