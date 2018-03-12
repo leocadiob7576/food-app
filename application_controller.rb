@@ -14,6 +14,7 @@ class ApplicationController < Sinatra::Base
     erb :index
   end
   
+  
   post '/resultRecipe' do
     # puts params
     
