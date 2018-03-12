@@ -1,7 +1,7 @@
 class Resturant
     
     def initialize
-        zomato_instance = Romatio::Zomato.new("Zomato")
+        zomato_instance = Zomato.new("Zomato")
     end
     
     def get_categories
@@ -28,5 +28,9 @@ class Resturant
             
             )
     end
+    
+end
+
+def resturant_finder
     
 end
