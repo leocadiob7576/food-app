@@ -1,6 +1,6 @@
-# require 'net/http'
-# require 'json'
-# require 'pp'
+ #require 'net/http'
+ #require 'json'
+ #require 'pp'
 
 
 url = 'https://thereportoftheweek-api.herokuapp.com/reports?category=Energy%20Crisis'
