@@ -16,7 +16,6 @@ class ApplicationController < Sinatra::Base
   
   
   post '/resultRecipe' do
-    # puts params
     
     @user_food = params[:search]
     

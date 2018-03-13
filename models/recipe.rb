@@ -1,5 +1,5 @@
 require 'food2fork'
 
-def recipe_finder
-    Recipe.search(@user_food)
-end
+# ENV[FOOD2FORK_API_KEY]
+
+Food2Fork::Recipe.search
