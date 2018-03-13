@@ -1,14 +1,17 @@
- #require 'net/http'
- #require 'json'
- #require 'pp'
+ require 'net/http'
+ require 'json'
+ require 'pp'
 
 
-url = 'https://thereportoftheweek-api.herokuapp.com/reports?category=Energy%20Crisis'
-uri = URI(url)
-response = Net::HTTP.get(uri)
-pp JSON.parse(response)\
+# url = 'https://thereportoftheweek-api.herokuapp.com/reports?category=Energy%20Crisis'
+# uri = URI(url)
+# response = Net::HTTP.get(uri)
+# pp JSON.parse(response)\
 
-class Review
+# class Review
     
+# end
+class Reviews
+ attr_reader :food, 
 end
 

@@ -38,4 +38,8 @@ class ApplicationController
     erb :reviews
   end
   
+  get  '/reports?category=@user_choice' do 
+    erb :reviews
+  end
+  
 end
