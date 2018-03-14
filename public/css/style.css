@@ -2,6 +2,7 @@ body {
     text-align: center;
 }
 h1 {
+  background-color: lightgreen;
   color: white;
   text-shadow: 3px 3px 4px #ff9999;
   font-family: 'Wendy One', sans-serif;
@@ -9,5 +10,4 @@ h1 {
   animation-duration: 2s;
   animation-iteration-count: infinite;
   text-align: center;
-  background-color: lightgreen;
 }
