@@ -6,7 +6,8 @@ h1 {
   text-shadow: 3px 3px 4px #ff9999;
   font-family: 'Wendy One', sans-serif;
   animation-name: ccolor;
-  animation-duration: 4s;
+  animation-duration: 2s;
   animation-iteration-count: infinite;
   text-align: center;
+  background-color: lightgreen;
 }
