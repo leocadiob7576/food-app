@@ -23,7 +23,7 @@ class ApplicationController < Sinatra::Base
     erb :resultRecipe
   end  
   
-  post '/resultRestaurants' do
+  post '/views/resultRestaurants' do
     #puts params
     
     @user_search = params[:search]
