@@ -1,30 +1,28 @@
-#  #require 'net/http'
-#  #require 'json'
-#  #require 'pp'
+require 'net/http'
+require 'json'
+require 'pp'
 
-
-# url = 'https://thereportoftheweek-api.herokuapp.com/reports?category=Energy%20Crisis'
+# url = 'https://thereportoftheweek-api.herokuapp.com/reports'
 
 # uri = URI(url)
 # response = Net::HTTP.get(uri)
-# pp JSON.parse(response)\
-
-# class Review
-    
-# end
-<<<<<<< HEAD
-class Reviews
- attr_reader :food, :rate
- def initialize(food, rate)
-  @food=food
-  @rate=rate
- end
- def get_food
+# result = JSON.parse(response)
+# puts = result['rating']
+class Review
+ attr_reader :user_choice, :rating 
+ def initialize(user_choice,rating)
+  @user_choice=user_choice
+  @review=rating
  end
  
- def get_rate
- end
-end
-=======
->>>>>>> 71f0fe3f8a54d61a96c2b943cbd1c86cc9b16b10
+ def rating(user_choice)
+  url = 'https://thereportoftheweek-api.herokuapp.com/reports'
+  uri = URI(url)
+  response = Net::HTTP.get(uri)
+  result = JSON.parse(response)
+  result[7]
 
+end
+puts rating('Fuel')
+
+end
