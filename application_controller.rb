@@ -38,7 +38,7 @@ class ApplicationController
     erb :reviews
   end
   
-  get  '/reports?category=@user_choice' do 
+  get  'https://thereportoftheweek-api.herokuapp.com/reports?category=@user_choice' do 
     erb :reviews
   end
   
