@@ -1,10 +1,14 @@
 body {
     text-align: center;
+    background-image: url("public/css/yellow-food.jpg");
 }
 h1 {
-    background-color: lightgreen;
-    color: blue;
-}
-homepage {
-    background-color: gray;
+  background-color: lightgreen;
+  color: white;
+  text-shadow: 3px 3px 4px #000000;
+  font-family: 'Wendy One', sans-serif;
+  animation-name: ccolor;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  text-align: center;
 }

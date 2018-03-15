@@ -16,13 +16,20 @@ class ApplicationController < Sinatra::Base
   
   
   post '/resultRecipe' do
-    # puts params
+    user_food = params[:search]
+    @search = SearchRecipe.new(user_food)
     
-    @user_food = params[:search]
     
     erb :resultRecipe
   end  
   
+  post '/views/resultRestaurants' do
+    #puts params
+    
+    @user_search = params[:search]
+    
+    erb :resultRestaurants
+  end
 end
 
 class ApplicationController
