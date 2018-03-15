@@ -10,5 +10,5 @@ h1 {
   animation-name: ccolor;
   animation-duration: 2s;
   animation-iteration-count: infinite;
-  text-align: right;
+  text-align: center;
 }

@@ -16,14 +16,12 @@ class SearchRecipe
     
     def search_recipe(user_food)
         base_search = 'http://food2fork.com/api/search?key='
-        url = base_search + '' + '&q=' + user_food
+        url = base_search + '55c0fb3c358ecc4cb6142f13dcf93851' + '&q=' + user_food
         
         uri = URI(url)
         response = Net::HTTP.get(uri)
         pp JSON.parse(response)
         
-        food_data["recipes"].each do
-            puts []
-        end
+        
     end
 end
