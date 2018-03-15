@@ -19,7 +19,6 @@ class ApplicationController < Sinatra::Base
     user_food = params[:search]
     @search = SearchRecipe.new(user_food)
     
-    
     erb :resultRecipe
   end  
   
@@ -42,6 +41,10 @@ class ApplicationController
   end
   
   get '/views/reviews.erb' do
+    erb :reviews
+  end
+  
+  get  'https://thereportoftheweek-api.herokuapp.com/reports?category=@user_choice' do 
     erb :reviews
   end
   

@@ -14,14 +14,13 @@ class SearchRecipe
         @search_recipe = search_recipe(food)
     end
     
-    def search_recipe(selectedfood)
+    def search_recipe(food)
         base_search = 'http://food2fork.com/api/search?key='
-        url = base_search + '55c0fb3c358ecc4cb6142f13dcf93851' + '&q=' + selectedfood
+        url = base_search + '55c0fb3c358ecc4cb6142f13dcf93851' + '&q=' + food
         
         uri = URI(url)
         response = Net::HTTP.get(uri)
         pp JSON.parse(response)
-        
         
     end
 end
