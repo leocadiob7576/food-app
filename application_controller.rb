@@ -19,7 +19,6 @@ class ApplicationController < Sinatra::Base
     user_food = params[:search]
     @search = SearchRecipe.new(user_food)
     
-    
     erb :resultRecipe
   end  
   
