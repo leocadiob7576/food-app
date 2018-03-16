@@ -29,12 +29,16 @@ class ApplicationController < Sinatra::Base
     
     erb :resultRestaurants
   end
-  post '/result-reviews.erb' do
-    @user_choice = params[:search]
-    
-  end
-end
+        
 
+  post '/resultReviews.erb' do
+    food = params[:food]
+    @user_food_review = rating(food)
+    
+    erb:resultReviews
+  end
+
+end
 class ApplicationController
   get '/views/recipe.erb' do
     erb :recipe
